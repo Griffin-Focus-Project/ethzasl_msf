@@ -4,13 +4,17 @@
 <arg name="imu_topic" default="/auk/fcu/imu"/>
 <arg name="vicon_topic" default="/vicon/auk/auk"/>
 <arg name="playback" default="viconpos_sensor_fix.yaml"/>
+<arg name="pose_w_cov" default="/griffin/odometry_sensor1/pose_with_covariance"/>
 
     <node name="msf_viconpos_sensor" pkg="msf_updates" type="pose_sensor" clear_params="true" output="screen">
-		<remap from="msf_core/hl_state_input" to="/fcu/ekf_state_out" />
-		<remap from="msf_core/correction" to="/fcu/ekf_state_in" />
+		
 		<remap from="/msf_core/imu_state_input" to="$(arg imu_topic)"  />
-		<!--Change this line-->
-		<remap from="msf_updates/transform_input" to="$(arg vicon_topic)" /> 
+		<!--Change t
+<remap from="/msf_core/hl_state_input" to="/fcu/ekf_state_out" />
+		<remap from="/msf_core/correction" to="/fcu/ekf_state_in" />his line-->
+		<remap from="/msf_updates/transform_input" to="$(arg vicon_topic)" />
+		<!--	-->
+		<remap from="/msf_updates/pose_with_covariance" to="$(arg pose_w_cov)"/> 
 		<rosparam file="$(find msf_updates)/$(arg playback)"/>
     </node>
 
