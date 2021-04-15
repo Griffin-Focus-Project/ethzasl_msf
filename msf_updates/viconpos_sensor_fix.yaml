@@ -6,9 +6,9 @@ scale_init: 1
 #########IMU PARAMETERS#######
 ######## Asctec Firefly IMU -- Change to VN-100 if available data.
 /pose_sensor/core/core_noise_acc: 0.083
-/pose_sensor/core/core_noise_accbias: 0.0083
+/pose_sensor/core/core_noise_accbias: 0.0053
 /pose_sensor/core/core_noise_gyr: 0.0013
-/pose_sensor/core/core_noise_gyrbias: 0.00003
+/pose_sensor/core/core_noise_gyrbias: 0.00013
 
 /msf_viconpos_sensor/pose_sensor/fixed_scale: true
 /msf_viconpos_sensor/pose_sensor/pose_noise_scale: 0.00
@@ -18,8 +18,8 @@ scale_init: 1
 /msf_viconpos_sensor/pose_sensor/pose_noise_p_ic: 0.0000
 /msf_viconpos_sensor/pose_sensor/pose_delay: -0.01 #position_delay also available
 /msf_viconpos_sensor/pose_sensor/position_delay: -0.01
-/msf_viconpos_sensor/pose_sensor/pose_noise_meas_p: 0.0005
-/msf_viconpos_sensor/pose_sensor/pose_noise_meas_q: 0.0005
+#/msf_viconpos_sensor/pose_sensor/pose_noise_meas_p: 0.0005
+#/msf_viconpos_sensor/pose_sensor/pose_noise_meas_q: 0.0005
 
 /msf_viconpos_sensor/pose_sensor/init/q_ic/w: 1.0
 /msf_viconpos_sensor/pose_sensor/init/q_ic/x: 0.0
@@ -34,9 +34,9 @@ scale_init: 1
 
 
 #Noise of sensor params:
-/msf_viconpos_sensor/pose_sensor/pose_noise_meas_p: 0.003 #Sample value
-/msf_viconpos_sensor/pose_sensor/pose_noise_meas_q: 0.005 #Sample value
-/msf_viconpos_sensor/pose_sensor/position_noise_meas: 0.0
+/msf_viconpos_sensor/pose_sensor/pose_noise_meas_p: 0.001 #Sample value
+/msf_viconpos_sensor/pose_sensor/pose_noise_meas_q: 0.001 #Sample value
+#/msf_viconpos_sensor/pose_sensor/position_noise_meas: 0.0
 
 
 
