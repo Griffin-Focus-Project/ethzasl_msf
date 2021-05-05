@@ -1,14 +1,14 @@
 #pose_sensor
 /core/data_playback: false
-/pose_sensor/core/fixed_bias: 0
+/msf_viconpos_sensor/core/fixed_bias: 0
 scale_init: 1
 
 #########IMU PARAMETERS#######
 ######## Asctec Firefly IMU -- Change to VN-100 if available data.
-/pose_sensor/core/core_noise_acc: 0.083
-/pose_sensor/core/core_noise_accbias: 0.0053
-/pose_sensor/core/core_noise_gyr: 0.0013
-/pose_sensor/core/core_noise_gyrbias: 0.00013
+/msf_viconpos_sensor/core/core_noise_acc: 0.023 #original: 0.083
+/msf_viconpos_sensor/core/core_noise_accbias: 0.0155 #original: 0.0053
+/msf_viconpos_sensor/core/core_noise_gyr: 0.0062 #original: 0.0013
+/msf_viconpos_sensor/core/core_noise_gyrbias: 0.00228 #original: 0.00013
 
 
 /msf_viconpos_sensor/pose_sensor/fixed_scale: true
