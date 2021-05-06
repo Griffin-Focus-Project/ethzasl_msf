@@ -3,23 +3,23 @@
 /msf_viconpos_sensor/core/fixed_bias: false
 scale_init: 1
 
-/msf_viconpos_sensor/pose_sensor/use_stable_initialization: false #This may be a source of spikes, when using nonstable initialization
+/msf_viconpos_sensor/pose_sensor/use_stable_initialization: true #This may be a source of spikes, when using nonstable initialization
 
 #########IMU PARAMETERS####### - AFTER FIXING
 ######## Asctec Firefly IMU -- Change to VN-100 if available data.  0.013  0.0032   0.00043
-/msf_viconpos_sensor/core/core_noise_acc: 0.23
-/msf_viconpos_sensor/core/core_noise_accbias: 0.155
-/msf_viconpos_sensor/core/core_noise_gyr: 0.062
-/msf_viconpos_sensor/core/core_noise_gyrbias: 0.0078
+/msf_viconpos_sensor/core/core_noise_acc: 0.043
+/msf_viconpos_sensor/core/core_noise_accbias: 0.02
+/msf_viconpos_sensor/core/core_noise_gyr: 0.0033
+/msf_viconpos_sensor/core/core_noise_gyrbias: 0.00058
 
 
 /msf_viconpos_sensor/pose_sensor/fixed_scale: true
-/msf_viconpos_sensor/pose_sensor/pose_noise_scale: 0.000
-/msf_viconpos_sensor/pose_sensor/pose_noise_p_wv: 0.001
-/msf_viconpos_sensor/pose_sensor/pose_noise_q_wv: 0.0025
-/msf_viconpos_sensor/pose_sensor/pose_noise_q_ic: 0.000
-/msf_viconpos_sensor/pose_sensor/pose_noise_p_ic: 0.000
-/msf_viconpos_sensor/pose_sensor/pose_delay: -0.01 #position_delay also available
+/msf_viconpos_sensor/pose_sensor/pose_noise_scale: 0.0
+/msf_viconpos_sensor/pose_sensor/pose_noise_p_wv: 0.0
+/msf_viconpos_sensor/pose_sensor/pose_noise_q_wv: 0.0
+/msf_viconpos_sensor/pose_sensor/pose_noise_q_ic: 0.0
+/msf_viconpos_sensor/pose_sensor/pose_noise_p_ic: 0.0
+/msf_viconpos_sensor/pose_sensor/pose_delay: -0.0095 #position_delay also available
 /msf_viconpos_sensor/pose_sensor/position_delay: -0.01
 
 
@@ -36,8 +36,8 @@ scale_init: 1
 
 
 #Noise of sensor params:
-/msf_viconpos_sensor/pose_sensor/pose_noise_meas_p: 0.003 #Tuning value
-/msf_viconpos_sensor/pose_sensor/pose_noise_meas_q: 0.003 
+/msf_viconpos_sensor/pose_sensor/pose_noise_meas_p: 0.004 #Tuning value
+/msf_viconpos_sensor/pose_sensor/pose_noise_meas_q: 0.002 
 
 
 
@@ -61,7 +61,7 @@ scale_init: 1
 /msf_viconpos_sensor/position_sensor/mah_threshold: 5.0
 
 #Enable Noise estimation
-pose_sensor/enable_noise_estimation: false
+pose_sensor/enable_noise_estimation: true
 position_sensor/enable_noise_estimation: false
 
 #Discount factor of past measurement importance
