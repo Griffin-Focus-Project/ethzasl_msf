@@ -1,5 +1,5 @@
 #pose_sensor
-/core/data_playback: true
+/core/data_playback: false
 /msf_viconpos_sensor/core/fixed_bias: false
 scale_init: 1
 
