@@ -37,15 +37,15 @@ scale_init: 1
 
 #Noise of sensor params:
 /msf_viconpos_sensor/pose_sensor/pose_noise_meas_p: 0.003 #Tuning value
-/msf_viconpos_sensor/pose_sensor/pose_noise_meas_q: 0.004 # Increased tenfold -> 0.02
+/msf_viconpos_sensor/pose_sensor/pose_noise_meas_q: 0.004 #Increased tenfold -> 0.02
 
 
 
 
 
-/msf_viconpos_sensor/pose_sensor/pose_fixed_scale: true	 #maybe check datasheet
-/msf_viconpos_sensor/pose_sensor/pose_fixed_p_ic: true	 #maaaybe change.
-/msf_viconpos_sensor/pose_sensor/pose_fixed_q_ic: true   #Set false -> Rotation between IMU and VIcon not static
+/msf_viconpos_sensor/pose_sensor/pose_fixed_scale: true #Maybe check datasheet
+/msf_viconpos_sensor/pose_sensor/pose_fixed_p_ic: true #Maaaybe change.
+/msf_viconpos_sensor/pose_sensor/pose_fixed_q_ic: true #Set false -> Rotation between IMU and VIcon not static
 #/msf_viconpos_sensor/pose_sensor/pose_fixed_p_wv: true #Typically unknown and subject to drift -> But vicon is 'world'
 #/msf_viconpos_sensor/pose_sensor/pose_fixed_q_wv: true #Typically unknown and subject to drift -> same
 
